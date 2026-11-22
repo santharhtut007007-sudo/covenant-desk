@@ -1,0 +1,123 @@
+
+===== GTX (base 2025-01-31)
+Candidate sections: 6.13
+- Consolidated Gross Total Leverage Ratio (total_leverage) maximum 4.7x, Section 6.13, applies to: Revolver; springing=True  [VERIFIED]
+    quote: "Holdings will not permit the Consolidated Gross Total Leverage Ratio to exceed 4.70 to 1.00."
+Reasoning: The passage specifies a maximum leverage ratio for the Consolidated Gross Total Leverage Ratio, which is tested only when the Revolving Loans and Letters of Credit outstanding exceed 35.0% of the Revolving Commitments. This is a maintenance covenant.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 1, 'seconds': 11.5, 'prompt_tokens': 827, 'output_tokens': 196, 'cost_usd': 0.0}
+
+===== DAN (base 2026-07-10)
+Candidate sections: 5.04
+- First Lien Net Leverage Ratio (first_lien_leverage) maximum 2x, Section 5.04, applies to: Fiscal Quarter; springing=False  [VERIFIED]
+    quote: "the First Lien Net Leverage Ratio as of such day to exceed 2.00:1.00"
+Reasoning: The passage specifies a maximum leverage ratio for the First Lien Net Leverage Ratio that must be maintained at last day of each Fiscal Quarter. This is a clear maintenance covenant.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 2, 'seconds': 20.1, 'prompt_tokens': 1566, 'output_tokens': 375, 'cost_usd': 0.0}
+
+===== ADNT (base 2026-08-21)
+Candidate sections: 6.01
+No maintenance covenant found (covenant-lite?)
+Reasoning: The provided text does not contain any financial maintenance covenants. It only lists permitted types of Indebtedness and related conditions for incurrence, which are not maintenance covenants.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 3, 'seconds': 32.5, 'prompt_tokens': 4486, 'output_tokens': 440, 'cost_usd': 0.0}
+
+===== CPS (base 2026-09-10)
+Candidate sections: 10.3
+- fixed_charge_coverage (fixed_charge_coverage) minimum 1x, Section 10.3, applies to: Parent and its Restricted Subsidiaries on a consolidated basis; springing=False  [VERIFIED]
+    quote: "Fixed Charge Coverage Ratio. Parent and its Restricted Subsidiaries on a consolidated basis shall maintain a Fixed Charge Coverage Ratio (as calculated on a consolidated basis) of at least 1.0 to 1.0 for each Fixed Charg"
+Reasoning: The passage specifies a minimum Fixed Charge Coverage Ratio for Parent and its Restricted Subsidiaries on consolidated basis, which is a financial maintenance covenant. It is tested for each Fixed Charge Coverage Ratio Test Period ending during any Financial Covenant Trigger Period and on the date of the occurrence of the trigger for the applicable Financial Covenant Trigger Period.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 4, 'seconds': 45.9, 'prompt_tokens': 5234, 'output_tokens': 725, 'cost_usd': 0.0}
+
+===== GT (base 2025-08-08)
+Candidate sections: 6.09, 9.15
+- Consolidated Coverage Ratio (fixed_charge_coverage) minimum 2x, Section 6.09, applies to: at any time when the requirements of this Section 6.09 apply; springing=False  [UNVERIFIED ['quote_in_document']]
+    quote: "The Borrower will not at the requirements of this Section 6.09 apply permit the Consolidated Coverage Ratio for the most recent period of four consecutive fiscal quarters ending on the last day of the most recent fiscal "
+Reasoning: The quote has been corrected to include the missing quotation marks and the word 'not' to ensure it is a direct quote from the text.
+Retried after failed checks: True; usage: {'model': 'qwen2.5vl:7b', 'calls': 6, 'seconds': 71.1, 'prompt_tokens': 7322, 'output_tokens': 1191, 'cost_usd': 0.0}
+
+===== VC (base 2026-04-29)
+Candidate sections: 7.11
+- total_net_leverage_ratio (total_leverage) maximum 3.5x, Section 7.11, applies to: Amendment No. 6 Revolving Credit Facility; springing=False  [UNVERIFIED ['quote_in_document']]
+    quote: "permit the Total Net Leverage Ratio as of the last day of the Test Period (commencing with the first fiscal quarter ending after the Amendment No. 6 Effective Date) to exceed (i) 3.50:1.00 or (ii) for three full fiscal q"
+Reasoning: The passage describes a financial covenant that limits the Total Net Leverage Ratio to a the last day of the Test Period, which starts after the Amendment No. 6 Effective Date. The threshold is 3.50, and it is a maximum leverage ratio.
+Retried after failed checks: True; usage: {'model': 'qwen2.5vl:7b', 'calls': 8, 'seconds': 95.5, 'prompt_tokens': 9095, 'output_tokens': 1685, 'cost_usd': 0.0}
+
+===== DCH (base 2025-02-24)
+Candidate sections: 6.10, 6.11
+- Total Net Leverage Ratio (total_leverage) maximum 4.5x, Section 6.10, applies to: fiscal_quarter; springing=False  [UNVERIFIED ['threshold_in_quote']]
+    quote: "For the benefit of the Revolving Lenders, the Issuing Banks and the Tranche A Term Lenders only (and the Administrative Agent on their behalf), the Parent will not permit the Total Net Leverage Ratio as of the end of any"
+Reasoning: The quote specifies the Total Net Leverage Ratio as a maximum threshold for each fiscal quarter, which is a maintenance covenant. The threshold is 4.50 to 1.00, and it applies to the end of each fiscal quarter. There is no indication that this covenant is tested only when a condition is met, so springing is false.
+Retried after failed checks: True; usage: {'model': 'qwen2.5vl:7b', 'calls': 10, 'seconds': 124.9, 'prompt_tokens': 13875, 'output_tokens': 2153, 'cost_usd': 0.0}
+
+===== CAR (base 2026-07-01)
+Candidate sections: none
+No maintenance covenant found (covenant-lite?)
+Reasoning: No candidate covenant section found by retrieval.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 10, 'seconds': 124.9, 'prompt_tokens': 13875, 'output_tokens': 2153, 'cost_usd': 0.0}
+
+===== HTZ (base 2025-07-17)
+Candidate sections: none
+No maintenance covenant found (covenant-lite?)
+Reasoning: No candidate covenant section found by retrieval.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 10, 'seconds': 124.9, 'prompt_tokens': 13875, 'output_tokens': 2153, 'cost_usd': 0.0}
+
+===== CCL (base 2025-09-29)
+Candidate sections: 6.09
+- Total Leverage Ratio (total_leverage) maximum 0.65x, Section 6.09, applies to: Testing Date; springing=False  [VERIFIED]
+    quote: "the ratio of the aggregate of all Borrowed Moneys (for the time being undischarged) to Consolidated Capital to be greater than 0.65 on any Testing Date"
+- Interest Coverage Ratio (interest_coverage) minimum 2.5x, Section 6.09, applies to: Testing Date; springing=False  [UNVERIFIED ['threshold_in_quote']]
+    quote: "the ratio of EBITDA to Consolidated Net Interest Charges for the Carnival Corporation & plc Group for the Measurement Period ending on such Testing Date to be less than the relevant ratio below"
+Reasoning: The Interest Coverage Ratio is correctly identified as a maintenance covenant with a minimum threshold of 2.5, and it is tested on each Testing Date. The quote is copied exactly from the text, including the threshold number.
+Retried after failed checks: True; usage: {'model': 'qwen2.5vl:7b', 'calls': 12, 'seconds': 155.0, 'prompt_tokens': 15902, 'output_tokens': 2716, 'cost_usd': 0.0}
+
+===== CZR (base 2024-02-07)
+Candidate sections: none
+No maintenance covenant found (covenant-lite?)
+Reasoning: No candidate covenant section found by retrieval.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 12, 'seconds': 155.0, 'prompt_tokens': 15902, 'output_tokens': 2716, 'cost_usd': 0.0}
+
+===== CNK (base 2023-05-26)
+Candidate sections: 6.09
+- Consolidated Net Senior Secured Leverage Ratio (total_leverage) maximum 3.5x, Section 6.09, applies to: any time that any Revolving Loans are outstanding; springing=True  [VERIFIED]
+    quote: "at any time that any Revolving Loans are outstanding, permit the Consolidated Net Senior Secured Leverage Ratio for any period of four consecutive fiscal quarters ending on the last day of any fiscal quarter to exceed 3."
+Reasoning: The passage specifies a maximum leverage ratio that applies only when Revolving Loans are outstanding. This is a springing maintenance covenant.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 13, 'seconds': 164.4, 'prompt_tokens': 16597, 'output_tokens': 2919, 'cost_usd': 0.0}
+
+===== AAL (base 2026-07-23)
+Candidate sections: 6.08
+- minimum_liquidity (minimum_liquidity) minimum 2e+09 USD, Section 6.08, applies to: at the close of any Business Day; springing=False  [VERIFIED]
+    quote: "Parent will not permit the aggregate amount of Liquidity at the close of any Business Day to be less than $2,000,000,000."
+Reasoning: The passage specifies a minimum liquidity requirement that must be met at the close of any Business Day, which is a a maintenance covenant.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 14, 'seconds': 175.3, 'prompt_tokens': 17239, 'output_tokens': 3112, 'cost_usd': 0.0}
+
+===== SABR (base 2026-09-28)
+Candidate sections: none
+No maintenance covenant found (covenant-lite?)
+Reasoning: No candidate covenant section found by retrieval.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 14, 'seconds': 175.3, 'prompt_tokens': 17239, 'output_tokens': 3112, 'cost_usd': 0.0}
+
+===== IHRT (base 2026-08-10)
+Candidate sections: 7.13
+- fixed_charge_coverage (fixed_charge_coverage) minimum 1x, Section 7.13, applies to: Test Period; springing=True  [UNVERIFIED ['quote_in_document']]
+    quote: "The Borrower shall not permit the Fixed Charge Coverage Ratio for any Test Period to be less than 1.00 to 1.00; provided that such Fixed Charge Coverage Ratio will only be tested on the date any Covenant Trigger Period c"
+Reasoning: The passage specifies a minimum threshold for the Fixed Charge Coverage Ratio, which is tested only when a Covenant Trigger Period commences and continues until the period ends. The quote is corrected to include the word 'applies_to' instead of 'applies_to'.
+Retried after failed checks: True; usage: {'model': 'qwen2.5vl:7b', 'calls': 16, 'seconds': 198.0, 'prompt_tokens': 18964, 'output_tokens': 3586, 'cost_usd': 0.0}
+
+===== NCLH (base 2026-10-15)
+Candidate sections: 6.13
+- free_liquidity (minimum_liquidity) minimum 2.5e+09 USD, Section 6.13, applies to: any time; springing=False  [UNVERIFIED ['threshold_in_quote']]
+    quote: "Free Liquidity to be less than $250,000,000 at any time"
+Reasoning: The passage specifies a minimum level of Free Liquidity that must be maintained at all times, which is the definition of a maintenance covenant.
+Retried after failed checks: True; usage: {'model': 'qwen2.5vl:7b', 'calls': 18, 'seconds': 212.6, 'prompt_tokens': 20528, 'output_tokens': 3888, 'cost_usd': 0.0}
+
+===== HRI (base 2026-09-03)
+Candidate sections: none
+No maintenance covenant found (covenant-lite?)
+Reasoning: No candidate covenant section found by retrieval.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 18, 'seconds': 212.6, 'prompt_tokens': 20528, 'output_tokens': 3888, 'cost_usd': 0.0}
+
+===== URI (base 2026-10-29)
+Candidate sections: none
+No maintenance covenant found (covenant-lite?)
+Reasoning: No candidate covenant section found by retrieval.
+Retried after failed checks: False; usage: {'model': 'qwen2.5vl:7b', 'calls': 18, 'seconds': 212.6, 'prompt_tokens': 20528, 'output_tokens': 3888, 'cost_usd': 0.0}
+
+TOTAL {'model': 'qwen2.5vl:7b', 'calls': 18, 'seconds': 212.6, 'prompt_tokens': 20528, 'output_tokens': 3888, 'cost_usd': 0.0}

@@ -1,0 +1,50 @@
+{
+ "one_quarter": {
+  "0.05": {
+   "n": 545,
+   "hits": 39,
+   "expected": 27.2,
+   "hit_rate": 0.0716,
+   "kupiec_p": 0.0296,
+   "christoffersen_p": 0.192,
+   "conditional_coverage_p": 0.0401
+  },
+  "0.01": {
+   "n": 545,
+   "hits": 17,
+   "expected": 5.5,
+   "hit_rate": 0.0312,
+   "kupiec_p": 0.0001,
+   "christoffersen_p": 0.565,
+   "conditional_coverage_p": 0.0003
+  }
+ },
+ "one_quarter_ex_2020": {
+  "0.05": {
+   "n": 497,
+   "hits": 25,
+   "expected": 24.9,
+   "hit_rate": 0.0503,
+   "kupiec_p": 0.9754,
+   "christoffersen_p": 0.8132,
+   "conditional_coverage_p": 0.972
+  },
+  "0.01": {
+   "n": 497,
+   "hits": 10,
+   "expected": 5.0,
+   "hit_rate": 0.0201,
+   "kupiec_p": 0.0462,
+   "christoffersen_p": 0.5155,
+   "conditional_coverage_p": 0.1109
+  }
+ },
+ "one_year_drop_30pct": {
+  "n": 125,
+  "events": 18,
+  "base_rate": 0.144,
+  "brier_model": 0.1293,
+  "brier_naive": 0.1233,
+  "skill": -0.049
+ }
+}

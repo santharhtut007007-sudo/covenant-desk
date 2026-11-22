@@ -1,0 +1,73 @@
+{
+  "about": "Answer key for the Contract Agent: financial maintenance covenants in each borrower's agreement in force (as identified by agreements.py). Drafted by Claude Code by reading the covenant sections; every quote is checked against the filing by tests/test_live_edgar.py. Needs human review: set reviewed_by when checked.",
+  "reviewed_by": null,
+  "families": {
+    "leverage": ["total_leverage", "net_leverage", "secured_leverage", "first_lien_leverage"],
+    "coverage": ["interest_coverage", "fixed_charge_coverage"],
+    "liquidity": ["minimum_liquidity"],
+    "other": ["other"]
+  },
+  "excluded": {
+    "CAR": "Agreement in force picked by the rule-based classifier is a fleet financing facility, not the corporate credit agreement",
+    "HTZ": "Same: fleet / ABS financing document",
+    "HRI": "Same: receivables financing agreement",
+    "URI": "Same: not the corporate ABL facility"
+  },
+  "borrowers": {
+    "GTX": {"covenant_lite": false, "covenants": [
+      {"section": "6.13", "families": ["leverage"], "direction": "maximum", "thresholds": [4.70], "springing": true,
+       "quote": "Holdings will not permit the Consolidated Gross Total Leverage Ratio to exceed 4.70 to 1.00",
+       "note": "Gross total leverage; revolver only; tested when revolver usage exceeds 35% of commitments"}]},
+    "DAN": {"covenant_lite": false, "covenants": [
+      {"section": "5.04", "families": ["leverage"], "direction": "maximum", "thresholds": [2.00], "springing": false,
+       "quote": "the First Lien Net Leverage Ratio as of such day to exceed 2.00:1.00"}]},
+    "ADNT": {"covenant_lite": true, "covenants": [],
+      "note": "Term loan agreement; no maintenance covenant wording anywhere in the document"},
+    "CPS": {"covenant_lite": false, "covenants": [
+      {"section": "10.3", "families": ["coverage"], "direction": "minimum", "thresholds": [1.0], "springing": true,
+       "quote": "shall maintain a Fixed Charge Coverage Ratio (as calculated on a consolidated basis) of at least 1.0 to 1.0",
+       "note": "ABL; tested only during a Financial Covenant Trigger Period"}]},
+    "GT": {"covenant_lite": false, "covenants": [
+      {"section": "6.09", "families": ["coverage"], "direction": "minimum", "thresholds": [2.00], "springing": true,
+       "quote": "to be less than 2.00 to 1.00",
+       "note": "Applies only when Available Commitments are below $275,000,000 for five consecutive Business Days"}]},
+    "VC": {"covenant_lite": false, "covenants": [
+      {"section": "7.11", "families": ["leverage"], "direction": "maximum", "thresholds": [3.50, 4.00], "springing": false,
+       "quote": "Permit the Total Net Leverage Ratio as of the last day of a Test Period",
+       "note": "3.50x, or 4.00x for three quarters after a Permitted Acquisition"}]},
+    "DCH": {"covenant_lite": false, "covenants": [
+      {"section": "6.10", "families": ["leverage"], "direction": "maximum",
+       "thresholds": [5.00, 4.75, 4.50, 4.25, 4.00, 3.75, 3.50], "springing": false,
+       "quote": "the Parent will not permit the Total Net Leverage Ratio as of the end of any fiscal quarter set forth below to exceed the ratio set forth below",
+       "note": "Step-down schedule; after the Acquisition Completion Date 4.50x through 31 Mar 2027. Revolver and Term A lenders only"},
+      {"section": "6.11", "families": ["coverage"], "direction": "minimum", "thresholds": [3.00, 2.75], "springing": false,
+       "quote": "the Parent will not permit the Cash Interest Expense Coverage Ratio as of the last day of any period of four consecutive fiscal quarters"}]},
+    "CCL": {"covenant_lite": false, "covenants": [
+      {"section": "6.09", "families": ["other", "leverage"], "direction": "maximum", "thresholds": [0.65], "springing": false,
+       "quote": "the ratio of the aggregate of all Borrowed Moneys (for the time being undischarged) to Consolidated Capital to be greater than 0.65",
+       "note": "Called Total Leverage Ratio but defined as debt to capital"},
+      {"section": "6.09", "families": ["coverage"], "direction": "minimum", "thresholds": [2.50, 3.00], "springing": false,
+       "quote": "the ratio of EBITDA to Consolidated Net Interest Charges",
+       "note": "2.50x through Nov 2025, 3.00x from Feb 2026"}]},
+    "CZR": {"covenant_lite": true, "covenants": [],
+      "note": "Term loan agreement; no maintenance covenant wording anywhere in the document"},
+    "CNK": {"covenant_lite": false, "covenants": [
+      {"section": "6.09", "families": ["leverage"], "direction": "maximum", "thresholds": [3.50], "springing": true,
+       "quote": "at any time that any Revolving Loans are outstanding, permit the Consolidated Net Senior Secured Leverage Ratio",
+       "note": "Tested only while revolving loans are outstanding"}]},
+    "AAL": {"covenant_lite": false, "covenants": [
+      {"section": "6.08", "families": ["liquidity"], "direction": "minimum", "thresholds": [2000000000], "springing": false,
+       "quote": "Parent will not permit the aggregate amount of Liquidity at the close of any Business Day to be less than $2,000,000,000"}]},
+    "SABR": {"covenant_lite": true, "covenants": [],
+      "note": "Term loan agreement; no maintenance covenant wording anywhere in the document"},
+    "IHRT": {"covenant_lite": false, "covenants": [
+      {"section": "7.13", "families": ["coverage"], "direction": "minimum", "thresholds": [1.00], "springing": true,
+       "quote": "The Borrower shall not permit the Fixed Charge Coverage Ratio for any Test Period to be less than 1.00 to 1.00",
+       "note": "Tested only during a Covenant Trigger Period"}]},
+    "NCLH": {"covenant_lite": false, "covenants": [
+      {"section": "6.12", "families": ["other", "leverage"], "direction": "maximum", "thresholds": [0.70], "springing": false,
+       "quote": "Permit the Loan-to-Value Ratio to be greater than or equal to 0.70 to 1.0 at any time"},
+      {"section": "6.13", "families": ["liquidity"], "direction": "minimum", "thresholds": [250000000], "springing": false,
+       "quote": "Permit Free Liquidity to be less than $250,000,000 at any time"}]}
+  }
+}

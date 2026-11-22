@@ -1,0 +1,19 @@
+ticker,sector,why_included,proxy_note
+GTX,Auto parts,Case study; continues the LBO project; 2020 Chapter 11 history,
+DAN,Auto parts,GTX peer; leveraged auto supplier,
+ADNT,Auto parts,GTX peer; seating supplier with term loan B,
+CPS,Auto parts,GTX peer; stressed supplier with high leverage,
+GT,Auto parts,Tires; large bank revolver with covenants,
+VC,Auto parts,Lower-leverage auto peer as a control,
+DCH,Auto parts,Dauch (formerly American Axle); leveraged after the Dowlais acquisition,
+CAR,Rental,Avis Budget; heavy corporate debt plus fleet financing,"Rental fleet depreciation is not in the D&A tag, so the XBRL proxy understates EBITDA; needs fleet-specific build"
+HTZ,Rental,Hertz; 2020 Chapter 11 history,"Rental fleet depreciation is not in the D&A tag, so the XBRL proxy understates EBITDA; needs fleet-specific build"
+CCL,Leisure,Carnival; covenant waivers during COVID,
+CZR,Gaming,Caesars; highly leveraged after merger,
+CNK,Leisure,Cinemark; covenant relief during COVID,
+AAL,Airlines,American Airlines; secured term loans,
+SABR,Technology,Sabre; stressed issuer with term loans,
+IHRT,Media,iHeartMedia; post-bankruptcy leveraged issuer,
+NCLH,Leisure,Norwegian Cruise Line; covenant waivers during COVID,
+HRI,Industrial,Herc Holdings; ABL revolver with springing covenant,"Rental fleet depreciation is not in the D&A tag, so the XBRL proxy understates EBITDA; needs fleet-specific build"
+URI,Industrial,United Rentals; ABL facility, stronger credit as a control,"Rental fleet depreciation is not in the D&A tag, so the XBRL proxy understates EBITDA; needs fleet-specific build"

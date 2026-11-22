@@ -1,0 +1,308 @@
+{
+ "model": "qwen2.5vl:7b",
+ "usage": {
+  "model": "qwen2.5vl:7b",
+  "calls": 20,
+  "seconds": 127.5,
+  "prompt_tokens": 22637,
+  "output_tokens": 4730,
+  "cost_usd": 0.0
+ },
+ "metrics": {
+  "covenant_lite_call": {
+   "k": 14,
+   "n": 14,
+   "rate": 1.0,
+   "ci95": [
+    0.785,
+    1.0
+   ]
+  },
+  "recall": {
+   "k": 11,
+   "n": 14,
+   "rate": 0.786,
+   "ci95": [
+    0.524,
+    0.924
+   ]
+  },
+  "precision": {
+   "k": 11,
+   "n": 12,
+   "rate": 0.917,
+   "ci95": [
+    0.646,
+    0.985
+   ]
+  },
+  "direction": {
+   "k": 11,
+   "n": 11,
+   "rate": 1.0,
+   "ci95": [
+    0.741,
+    1.0
+   ]
+  },
+  "threshold": {
+   "k": 11,
+   "n": 11,
+   "rate": 1.0,
+   "ci95": [
+    0.741,
+    1.0
+   ]
+  },
+  "springing": {
+   "k": 9,
+   "n": 11,
+   "rate": 0.818,
+   "ci95": [
+    0.523,
+    0.949
+   ]
+  },
+  "all_fields_correct": {
+   "k": 9,
+   "n": 11,
+   "rate": 0.818,
+   "ci95": [
+    0.523,
+    0.949
+   ]
+  },
+  "verified_share": {
+   "k": 7,
+   "n": 12,
+   "rate": 0.583,
+   "ci95": [
+    0.32,
+    0.807
+   ]
+  },
+  "verified_and_correct": {
+   "k": 7,
+   "n": 7,
+   "rate": 1.0,
+   "ci95": [
+    0.646,
+    1.0
+   ]
+  }
+ },
+ "per_borrower": {
+  "GTX": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.13",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": false
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "DAN": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "5.04",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "ADNT": {
+   "lite_correct": true,
+   "matches": [],
+   "false_positives": [],
+   "n_pred": 0
+  },
+  "CPS": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "10.3",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": false,
+     "all_fields": false,
+     "verified": false
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "GT": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.09",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": false,
+     "all_fields": false,
+     "verified": false
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "VC": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "7.11",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": false
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "DCH": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.10",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    },
+    {
+     "gold_section": "6.11",
+     "found": false
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "CCL": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.09",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    },
+    {
+     "gold_section": "6.09",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 2
+  },
+  "CZR": {
+   "lite_correct": true,
+   "matches": [],
+   "false_positives": [],
+   "n_pred": 0
+  },
+  "CNK": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.09",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "AAL": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.08",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "SABR": {
+   "lite_correct": true,
+   "matches": [],
+   "false_positives": [],
+   "n_pred": 0
+  },
+  "IHRT": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "7.13",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "NCLH": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.12",
+     "found": false
+    },
+    {
+     "gold_section": "6.13",
+     "found": false
+    }
+   ],
+   "false_positives": [
+    {
+     "section": "6.12",
+     "name": "loan_to_value_ratio",
+     "verified": false
+    }
+   ],
+   "n_pred": 1
+  }
+ }
+}

@@ -1,0 +1,617 @@
+{
+ "GTX": {
+  "candidate_sections": [
+   "6.13"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "total_leverage",
+     "metric": "total_leverage",
+     "direction": "maximum",
+     "threshold": 4.7,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "Revolving Facility",
+     "springing": false,
+     "springing_condition": null,
+     "section": "6.13",
+     "quote": "Holdings will not permit the Consolidated Gross Total Leverage Ratio to exceed 4.70 to 1.00"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "The passage describes a maximum leverage ratio covenant on the Revolving Facility, meeting the criteria for a maintenance covenant.",
+  "retried": false
+ },
+ "DAN": {
+  "candidate_sections": [
+   "5.04"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "total_leverage",
+     "metric": "first_lien_leverage",
+     "direction": "maximum",
+     "threshold": 2.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "last day of any Fiscal Quarter beginning with the Fiscal Quarter ending December 31, 2020 and any subsequent Fiscal Quarter",
+     "springing": false,
+     "springing_condition": null,
+     "section": "5.04",
+     "quote": "no Loan Party will permit on the last day of any Fiscal Quarter beginning with the Fiscal Quarter ending December 31, 2020 and any subsequent Fiscal Quarter, the First Lien Net Leverage Ratio as of such day to exceed 2.00:1.00"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [
+   "First Lien Net Leverage Ratio"
+  ],
+  "reasoning": "This passage describes a maximum leverage ratio covenant, which is a maintenance covenant. The conditions are clearly defined (Fiscal Quarter, ratio, threshold).",
+  "retried": false
+ },
+ "ADNT": {
+  "candidate_sections": [
+   "6.01"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "Fixed Charge Coverage Ratio",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 2.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "all Indebtedness",
+     "springing": true,
+     "springing_condition": null,
+     "section": "6.01(h)(ii)",
+     "quote": "the Fixed Charge Coverage Ratio shall be equal to or greater than 2.00 to 1.00"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": false,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   },
+   {
+    "covenant": {
+     "name": "Fixed Charge Coverage Ratio",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 1.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "all Indebtedness",
+     "springing": true,
+     "springing_condition": null,
+     "section": "6.01(h)(i)(A)",
+     "quote": "the Fixed Charge Coverage Ratio shall be equal to or greater than 2.00 to 1.00"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": false,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   },
+   {
+    "covenant": {
+     "name": "Fixed Charge Coverage Ratio",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 1.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "all Indebtedness",
+     "springing": true,
+     "springing_condition": null,
+     "section": "6.01(k)(A)",
+     "quote": "the Fixed Charge Coverage Ratio on a Pro Forma Basis is equal to or greater than 2.00 to 1.00"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": false,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   },
+   {
+    "covenant": {
+     "name": "Consolidated Total Assets",
+     "metric": "total_leverage",
+     "direction": "maximum",
+     "threshold": 5.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "Indebtedness incurred pursuant to Section 6.01(i)(y)",
+     "springing": true,
+     "springing_condition": null,
+     "section": "6.01(i)(y)",
+     "quote": "5.0% of Consolidated Total Assets when incurred"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   },
+   {
+    "covenant": {
+     "name": "Minimum Liquidity",
+     "metric": "minimum_liquidity",
+     "direction": "minimum",
+     "threshold": 2000000000.0,
+     "threshold_unit": "usd",
+     "step_downs": [],
+     "applies_to": "all Indebtedness",
+     "springing": true,
+     "springing_condition": null,
+     "section": "6.01(h)(i)(x)",
+     "quote": "the aggregate principal amount of Indebtedness incurred pursuant to this Section 6.01(i)"
+    },
+    "checks": {
+     "quote_in_document": false,
+     "threshold_in_quote": false,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "Multiple maintenance covenants exist, including fixed charge coverage, leverage ratio, and minimum liquidity. All tests have been corrected to match the rules.",
+  "retried": true
+ },
+ "CPS": {
+  "candidate_sections": [
+   "10.3"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "fixed_charge_coverage",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 1.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "parent and its restricted subsidiaries",
+     "springing": false,
+     "springing_condition": null,
+     "section": "10.3.1",
+     "quote": "Parent and its Restricted Subsidiaries on a consolidated basis shall maintain a Fixed Charge Coverage Ratio (as calculated on a consolidated basis) of at least 1.0 to 1.0 for each Fixed Charge Coverage Ratio Test Period ending during any Financial Covenant Trigger Period and on the date of the occurrence of the trigger for the applicable Financial Covenant Trigger Period measured for the most recent period for which financial statements were delivered hereunder prior to the Financial Covenant Trigger Period."
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "This passage contains a fixed charge coverage ratio covenant with a minimum threshold of 1.0 to 1.0. The test applies at all times during a Financial Covenant Trigger Period.",
+  "retried": true
+ },
+ "GT": {
+  "candidate_sections": [
+   "6.09",
+   "9.15"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "Consolidated Coverage Ratio",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 2.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "most recent period of four consecutive fiscal quarters",
+     "springing": true,
+     "springing_condition": "Available Commitments shall for five consecutive Business Days be less than $275,000,000",
+     "section": "6.09",
+     "quote": "The Borrower will not at any time when the requirements of this Section 6.09 apply permit the Consolidated Coverage Ratio for the most recent period of four consecutive fiscal quarters ending on the last day of the most recent fiscal quarter for which financial statements have been filed with the SEC prior to such time to be less than 2.00 to 1.00."
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "Section 6.09 contains a financial maintenance covenant. The test is springing and triggered when Available Commitments are less than $275,000,000 for five consecutive Business Days.",
+  "retried": true
+ },
+ "VC": {
+  "candidate_sections": [
+   "7.11"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "total_leverage",
+     "metric": "total_leverage",
+     "direction": "maximum",
+     "threshold": 3.5,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "Test Period",
+     "springing": false,
+     "springing_condition": null,
+     "section": "7.11",
+     "quote": "Permit the Total Net Leverage Ratio as of the last day of a Test Period (commencing with the first fiscal quarter ending after the Amendment No. 6 Effective Date) to exceed (i) 3.50:1.00 or (ii) for three full fiscal quarters following the effectiveness of a Permitted Acquisition, 4.00:1.00."
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "This passage describes a maximum leverage ratio covenant that applies during a Test Period. The threshold changes based on whether a Permitted Acquisition has occurred.",
+  "retried": false
+ },
+ "DCH": {
+  "candidate_sections": [
+   "6.10",
+   "6.11"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "Total Net Leverage Ratio",
+     "metric": "total_leverage",
+     "direction": "maximum",
+     "threshold": 5.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "Parent",
+     "springing": false,
+     "springing_condition": null,
+     "section": "6.10",
+     "quote": "Total Net Leverage Ratio as of the end of any fiscal quarter set forth below to exceed the ratio set forth below with respect to such fiscal quarter: Period Total Net Leverage Ratio April 1, 2022, through June 30, 2022 5.00 to 1.00 July 1, 2022 through September 30, 2022 4.75 to 1.00 October 1, 2022 through June 30, 2024 4.50 to 1.00 July 1, 2024 through March 31, 2026 4.25 to 1.00 April 1, 2026 through March 31, 2027 4.00 to 1.00 April 1, 2027 through March 31, 2028 3.75 to 1.00 April 1, 2028 and thereafter 3.50 to 1.00"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   },
+   {
+    "covenant": {
+     "name": "Cash Interest Expense Coverage Ratio",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 3.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "Parent",
+     "springing": false,
+     "springing_condition": null,
+     "section": "6.11",
+     "quote": "Cash Interest Expense Coverage Ratio as of the last day of any period of four consecutive fiscal quarters ending during the dates set forth below to be less than the ratio set forth below with respect to such period: Period End Date Cash Interest Expense Coverage Ratio Closing Date through June 30, 2023 3.00 to 1.00 July 1, 2023, through June 30, 2024 2.75 to 1.00 July 1, 2024 and thereafter 3.00 to 1.00"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "The passages contain two maintenance covenants: Total Net Leverage Ratio and Cash Interest Expense Coverage Ratio.",
+  "retried": false
+ },
+ "CCL": {
+  "candidate_sections": [
+   "6.09"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "total_leverage",
+     "metric": "total_leverage",
+     "direction": "maximum",
+     "threshold": 0.65,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "aggregate of all Borrowed Moneys (for the time being undischarged) to Consolidated Capital",
+     "springing": false,
+     "springing_condition": null,
+     "section": "6.09",
+     "quote": "the ratio of the aggregate of all Borrowed Moneys (for the time being undischarged) to Consolidated Capital to be greater than 0.65"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   },
+   {
+    "covenant": {
+     "name": "minimum_interest_coverage",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 2.5,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "EBITDA to Consolidated Net Interest Charges",
+     "springing": true,
+     "springing_condition": "Testing Date",
+     "section": "6.09",
+     "quote": "the ratio of EBITDA to Consolidated Net Interest Charges for the Carnival Corporation & plc Group for the Measurement Period ending on such Testing Date to be less than the relevant ratio below: August 31, 2025 2.50"
+    },
+    "checks": {
+     "quote_in_document": false,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   },
+   {
+    "covenant": {
+     "name": "minimum_interest_coverage",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 3.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "EBITDA to Consolidated Net Interest Charges",
+     "springing": true,
+     "springing_condition": "Testing Date",
+     "section": "6.09",
+     "quote": "the ratio of EBITDA to Consolidated Net Interest Charges for the Carnival Corporation & plc Group for the Measurement Period ending on such Testing Date to be less than the relevant ratio below"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": false,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "Contains multiple maintenance covenants. The tests are triggered at the Testing Date and are dependent on the specified ratio values.",
+  "retried": true
+ },
+ "CZR": {
+  "candidate_sections": [],
+  "covenants": [],
+  "no_maintenance_covenant": true,
+  "definitions_requested": [],
+  "reasoning": "No candidate covenant section found by retrieval.",
+  "retried": false
+ },
+ "CNK": {
+  "candidate_sections": [
+   "6.09"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "total_leverage",
+     "metric": "total_leverage",
+     "direction": "maximum",
+     "threshold": 3.5,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "Consolidated Net Senior Secured Leverage Ratio",
+     "springing": false,
+     "springing_condition": null,
+     "section": "6.09",
+     "quote": "permit the Consolidated Net Senior Secured Leverage Ratio for any period of four consecutive fiscal quarters ending on the last day of any fiscal quarter to exceed 3.50 to 1.0"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "The passage describes a maximum leverage ratio covenant that applies when Revolving Loans are outstanding. The quote accurately reflects the exact wording and numerical threshold from the document.",
+  "retried": true
+ },
+ "AAL": {
+  "candidate_sections": [
+   "6.08"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "minimum_liquidity",
+     "metric": "minimum_liquidity",
+     "direction": "minimum",
+     "threshold": 2000000000.0,
+     "threshold_unit": "usd",
+     "step_downs": [],
+     "applies_to": "Parent",
+     "springing": false,
+     "springing_condition": null,
+     "section": "6.08",
+     "quote": "Parent will not permit the aggregate amount of Liquidity at the close of any Business Day to be less than $2,000,000,000"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "This passage describes a minimum liquidity covenant.",
+  "retried": false
+ },
+ "SABR": {
+  "candidate_sections": [],
+  "covenants": [],
+  "no_maintenance_covenant": true,
+  "definitions_requested": [],
+  "reasoning": "No candidate covenant section found by retrieval.",
+  "retried": false
+ },
+ "IHRT": {
+  "candidate_sections": [
+   "7.13"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "fixed_charge_coverage",
+     "metric": "fixed_charge_coverage",
+     "direction": "minimum",
+     "threshold": 1.0,
+     "threshold_unit": "ratio",
+     "step_downs": [],
+     "applies_to": "test_period",
+     "springing": true,
+     "springing_condition": null,
+     "section": "[Section 7.13]",
+     "quote": "The Borrower shall not permit the Fixed Charge Coverage Ratio for any Test Period to be less than 1.00 to 1.00"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [],
+  "reasoning": "The passage describes a minimum fixed charge coverage ratio covenant that is triggered during a 'Covenant Trigger Period'.",
+  "retried": false
+ },
+ "NCLH": {
+  "candidate_sections": [
+   "6.12",
+   "6.13"
+  ],
+  "covenants": [
+   {
+    "covenant": {
+     "name": "Free Liquidity",
+     "metric": "minimum_liquidity",
+     "direction": "minimum",
+     "threshold": 250000000.0,
+     "threshold_unit": "usd",
+     "step_downs": [],
+     "applies_to": "any time",
+     "springing": true,
+     "springing_condition": "Free Liquidity required by Section 6.13 is less favorable than ECA Facilities. \u201cECA Facilities\u201d shall mean each of (i) that certain Credit Agreement dated October 12, 2012, as amended by a first amendment dated July 25, 2014 and as further amended and restated by a supplemental agreement dated April 21, 2020, as further amended and restated by a third supplemental agreement dated February 18, 2021, and as further modified from time to time, among Breakaway Four, Ltd. as Borrower, NCL Corporation Ltd., various lenders, KfW IPEX-Bank GmbH as facility agent, collateral agent and Hermes agent and the other agents and parties named therein and (ii) that certain Loan Agreement dated December 19, 2018 (effective January 8, 2019), as amended and restated by an amendment and restatement agreement dated February 17, 2021, as further amended and restated by an amendment and restatement agreement dated June 17, 2021 and as further modified from time to time, among O Class Plus One, LLC as Borrower, various lenders, Cr\u00e9dit Agricole Corporate and Investment Bank as SACE agent, BNP Paribas, as facility agent and HSBC Corporate Trustee Company (UK) Limited, as security trustee and the other agents and parties named therein, as guaranteed by NCL Corporation Ltd.\u201d}],",
+     "section": "6.13",
+     "quote": "Permit Free Liquidity to be less than $250,000,000 at any time; provided, that, if the Free Liquidity required by this Section 6.13 at any time is less favorable to the Secured Parties than as set forth in either of the ECA Facilities"
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": false,
+     "metric_consistent": true
+    }
+   },
+   {
+    "covenant": {
+     "name": "Loan-to-Value Ratio",
+     "metric": "total_leverage",
+     "direction": "maximum",
+     "threshold": 0.7,
+     "threshold_unit": "usd",
+     "step_downs": [],
+     "applies_to": "any time",
+     "springing": false,
+     "springing_condition": null,
+     "section": "6.12",
+     "quote": "Permit the Loan-to-Value Ratio to be greater than or equal to 0.70 to 1.0 at any time."
+    },
+    "checks": {
+     "quote_in_document": true,
+     "threshold_in_quote": true,
+     "section_exists": true,
+     "direction_consistent": true,
+     "springing_consistent": true,
+     "metric_consistent": true
+    }
+   }
+  ],
+  "no_maintenance_covenant": false,
+  "definitions_requested": [
+   "ECA Facilities"
+  ],
+  "reasoning": "The passage describes a minimum Loan-to-Value Ratio covenant.",
+  "retried": true
+ }
+}

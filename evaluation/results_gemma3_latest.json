@@ -1,0 +1,349 @@
+{
+ "model": "gemma3:latest",
+ "usage": {
+  "model": "gemma3:latest",
+  "calls": 20,
+  "seconds": 216.1,
+  "prompt_tokens": 24648,
+  "output_tokens": 6034,
+  "cost_usd": 0.0
+ },
+ "metrics": {
+  "covenant_lite_call": {
+   "k": 13,
+   "n": 14,
+   "rate": 0.929,
+   "ci95": [
+    0.685,
+    0.987
+   ]
+  },
+  "recall": {
+   "k": 14,
+   "n": 14,
+   "rate": 1.0,
+   "ci95": [
+    0.785,
+    1.0
+   ]
+  },
+  "precision": {
+   "k": 14,
+   "n": 20,
+   "rate": 0.7,
+   "ci95": [
+    0.481,
+    0.855
+   ]
+  },
+  "direction": {
+   "k": 14,
+   "n": 14,
+   "rate": 1.0,
+   "ci95": [
+    0.785,
+    1.0
+   ]
+  },
+  "threshold": {
+   "k": 14,
+   "n": 14,
+   "rate": 1.0,
+   "ci95": [
+    0.785,
+    1.0
+   ]
+  },
+  "springing": {
+   "k": 9,
+   "n": 14,
+   "rate": 0.643,
+   "ci95": [
+    0.388,
+    0.837
+   ]
+  },
+  "all_fields_correct": {
+   "k": 9,
+   "n": 14,
+   "rate": 0.643,
+   "ci95": [
+    0.388,
+    0.837
+   ]
+  },
+  "verified_share": {
+   "k": 10,
+   "n": 20,
+   "rate": 0.5,
+   "ci95": [
+    0.299,
+    0.701
+   ]
+  },
+  "verified_and_correct": {
+   "k": 9,
+   "n": 10,
+   "rate": 0.9,
+   "ci95": [
+    0.596,
+    0.982
+   ]
+  }
+ },
+ "per_borrower": {
+  "GTX": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.13",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": false,
+     "all_fields": false,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "DAN": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "5.04",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "ADNT": {
+   "lite_correct": false,
+   "matches": [],
+   "false_positives": [
+    {
+     "section": "6.01(h)(ii)",
+     "name": "Fixed Charge Coverage Ratio",
+     "verified": false
+    },
+    {
+     "section": "6.01(h)(i)(A)",
+     "name": "Fixed Charge Coverage Ratio",
+     "verified": false
+    },
+    {
+     "section": "6.01(k)(A)",
+     "name": "Fixed Charge Coverage Ratio",
+     "verified": false
+    },
+    {
+     "section": "6.01(i)(y)",
+     "name": "Consolidated Total Assets",
+     "verified": false
+    },
+    {
+     "section": "6.01(h)(i)(x)",
+     "name": "Minimum Liquidity",
+     "verified": false
+    }
+   ],
+   "n_pred": 5
+  },
+  "CPS": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "10.3",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": false,
+     "all_fields": false,
+     "verified": false
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "GT": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.09",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "VC": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "7.11",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "DCH": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.10",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    },
+    {
+     "gold_section": "6.11",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 2
+  },
+  "CCL": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.09",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    },
+    {
+     "gold_section": "6.09",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": false,
+     "all_fields": false,
+     "verified": false
+    }
+   ],
+   "false_positives": [
+    {
+     "section": "6.09",
+     "name": "minimum_interest_coverage",
+     "verified": false
+    }
+   ],
+   "n_pred": 3
+  },
+  "CZR": {
+   "lite_correct": true,
+   "matches": [],
+   "false_positives": [],
+   "n_pred": 0
+  },
+  "CNK": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.09",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": false,
+     "all_fields": false,
+     "verified": false
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "AAL": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.08",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "SABR": {
+   "lite_correct": true,
+   "matches": [],
+   "false_positives": [],
+   "n_pred": 0
+  },
+  "IHRT": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "7.13",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 1
+  },
+  "NCLH": {
+   "lite_correct": true,
+   "matches": [
+    {
+     "gold_section": "6.12",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": true,
+     "all_fields": true,
+     "verified": true
+    },
+    {
+     "gold_section": "6.13",
+     "found": true,
+     "direction": true,
+     "threshold": true,
+     "springing": false,
+     "all_fields": false,
+     "verified": false
+    }
+   ],
+   "false_positives": [],
+   "n_pred": 2
+  }
+ }
+}
